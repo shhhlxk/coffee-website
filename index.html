@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -12,159 +13,180 @@
 
 <body>
 
-<div class="loader">
-<h1>Velvet Brew</h1>
-</div>
+<nav id="nav">
 
-<header>
-
-<nav>
 <div class="logo">☕ Velvet Brew</div>
+
+<div id="hamburger">☰</div>
 
 <ul>
 <li><a href="#home">Home</a></li>
-<li><a href="#products">Menu</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#reviews">Reviews</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#reservation">Reservation</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
-<button id="themeBtn">🌙</button>
 </nav>
 
 <section class="hero" id="home">
 
 <div class="hero-content">
-<h1>Crafted Coffee.<br>Made With Passion.</h1>
+
+<h1 id="typing">Luxury Coffee Experience</h1>
 
 <p>
-Premium coffee experience with handpicked beans
-from around the world.
+Freshly brewed coffee, handcrafted shakes,
+hot chocolate and desserts made with passion.
 </p>
 
-<button>Explore Menu</button>
+<a href="menu.html" class="btn">
+Explore Menu
+</a>
 
 </div>
 
 </section>
 
-</header>
+<section id="about">
 
-<section class="stats">
+<h2 class="section-title">About Us</h2>
 
-<div>
+<div class="card">
+
+<h3>Our Story</h3>
+
+<p>
+Velvet Brew was created for coffee lovers who
+appreciate premium quality, beautiful ambience
+and unforgettable flavors.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="stats">
+
+<div class="card stat">
 <h2>15K+</h2>
 <p>Customers</p>
 </div>
 
-<div>
+<div class="card stat">
 <h2>120+</h2>
-<p>Coffee Types</p>
+<p>Menu Items</p>
 </div>
 
-<div>
+<div class="card stat">
 <h2>25</h2>
 <p>Branches</p>
 </div>
 
-<div>
+<div class="card stat">
 <h2>4.9★</h2>
 <p>Rating</p>
 </div>
 
+</div>
+
 </section>
 
-<section class="products" id="products">
+<section id="gallery">
 
-<h2>Popular Drinks</h2>
+<h2 class="section-title">Gallery</h2>
 
-<div class="product-grid">
+<div class="gallery">
 
-<div class="card">
-<h3>Caramel Latte</h3>
-<p>Rich espresso with creamy caramel.</p>
-<span>$5.99</span>
-</div>
+<div class="gallery-item">Coffee Art</div>
 
-<div class="card">
-<h3>Mocha Deluxe</h3>
-<p>Chocolate infused perfection.</p>
-<span>$6.49</span>
-</div>
+<div class="gallery-item">Premium Beans</div>
 
-<div class="card">
-<h3>Cold Brew</h3>
-<p>Slow brewed for 18 hours.</p>
-<span>$4.99</span>
-</div>
+<div class="gallery-item">Chocolate Shake</div>
+
+<div class="gallery-item">Cafe Interior</div>
+
+<div class="gallery-item">Desserts</div>
+
+<div class="gallery-item">Hot Chocolate</div>
 
 </div>
 
 </section>
 
-<section class="about" id="about">
+<section id="reservation">
 
-<h2>Our Story</h2>
-
-<p>
-Founded in 2012, Velvet Brew combines
-artisan craftsmanship with world-class beans.
-Every cup tells a story.
-</p>
-
-</section>
-
-<section class="reviews" id="reviews">
-
-<h2>Customer Reviews</h2>
-
-<div class="review-box">
-
-<div class="review">
-★★★★★
-<p>Best coffee I've ever had.</p>
-</div>
-
-<div class="review">
-★★★★★
-<p>Amazing ambience and service.</p>
-</div>
-
-<div class="review">
-★★★★★
-<p>Feels like luxury in a cup.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2>Contact Us</h2>
+<h2 class="section-title">Reserve A Table</h2>
 
 <form>
 
-<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email">
+<input type="email" placeholder="Your Email" required>
 
-<textarea placeholder="Message"></textarea>
+<input type="date" required>
 
-<button>Send Message</button>
+<input type="time" required>
+
+<input type="number" placeholder="Guests" required>
+
+<button type="submit">
+Reserve Now
+</button>
 
 </form>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="card">
+
+<p>📞 +91 9876543210</p>
+
+<br>
+
+<p>
+📍 XYZ Coffee House,<br>
+ABC Road,<br>
+Mumbai, Maharashtra
+</p>
+
+</div>
 
 </section>
 
 <footer>
 
 <h3>Velvet Brew</h3>
-<p>© 2026 All Rights Reserved</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
 
 </footer>
 
-<script src="script.js"></script>
+<a href="#" class="whatsapp">
+💬
+</a>
+
+<script>
+
+const nav = document.getElementById("nav");
+const hamburger = document.getElementById("hamburger");
+
+hamburger.onclick = () => {
+nav.classList.toggle("active");
+};
+
+</script>
 
 </body>
 </html>
