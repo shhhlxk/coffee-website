@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Brew Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav id="nav">
+
+<div class="logo">☕ Velvet Brew</div>
+
+<div id="hamburger">☰</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+</ul>
+
+</nav>
+
+<section style="padding-top:150px;">
+
+<h1 class="section-title">
+Our Menu
+</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Coffees</h2>
+
+<br>
+
+<p>Espresso — ₹180</p>
+<p>Cappuccino — ₹220</p>
+<p>Latte — ₹240</p>
+<p>Americano — ₹210</p>
+<p>Mocha — ₹260</p>
+
+</div>
+
+<div class="card">
+
+<h2>Shakes</h2>
+
+<br>
+
+<p>Chocolate Shake — ₹250</p>
+<p>Oreo Shake — ₹280</p>
+<p>KitKat Shake — ₹290</p>
+<p>Strawberry Shake — ₹260</p>
+<p>Vanilla Shake — ₹240</p>
+
+</div>
+
+<div class="card">
+
+<h2>Hot Chocolate</h2>
+
+<br>
+
+<p>Classic Hot Chocolate — ₹220</p>
+<p>Dark Chocolate — ₹260</p>
+<p>Hazelnut Chocolate — ₹280</p>
+
+</div>
+
+<div class="card">
+
+<h2>Desserts</h2>
+
+<br>
+
+<p>Brownie — ₹180</p>
+<p>Cheesecake — ₹320</p>
+<p>Tiramisu — ₹340</p>
+<p>Chocolate Lava Cake — ₹280</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Velvet Brew</h3>
+
+<p>
+Made With Love & Coffee
+</p>
+
+</footer>
+
+<script>
+
+const nav = document.getElementById("nav");
+const hamburger = document.getElementById("hamburger");
+
+hamburger.onclick = () => {
+nav.classList.toggle("active");
+};
+
+</script>
+
+</body>
+</html>
